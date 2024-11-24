@@ -12,7 +12,7 @@ body b {
   font-weight: 700;
 }
 .pageContainer {
-  padding: 80px 40px;
+  padding: 40px 40px;
 }
 
 .mainHeader {
@@ -30,6 +30,11 @@ body b {
 
 .pageContainer h2 {
   text-align: center;
+}
+.socialMediaLogo {
+  margin: 0;
+  color: white;
+  text-decoration: none;
 }
 .pageSection {
   margin: 10px 0;
@@ -69,4 +74,26 @@ body b {
 .bigLeftCol {
   flex: 0 0 55%;
   max-width: 55%;
+}
+
+.readMore {
+  color: white;
+  font-weight: 700;
+  background-color: #393f44 !important;
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 9999px;
+  border-color: none;
+  border-radius: none;
+}
+
+.tableArea {
+  background-color: #393f44 !important;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
