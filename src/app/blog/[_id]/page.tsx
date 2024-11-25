@@ -1,11 +1,10 @@
-import { myBlog } from '@/app/constants/blog';
 import { BlogDetail } from '@/app/components/BlogRelated/BlogDetail';
+import { myBlog } from '@/app/constants/blog';
 import type { Metadata } from 'next';
-// eslint-disable-next-line
-type Props = {
-  params: Promise<{ _id: string }>;
-};
+
+type tParams = Promise<{ _id: string }>;
 async function getBlog(id: string) {
+  console.log(id);
   for (let i = 0; i < myBlog.length; i++) {
     if (myBlog[i]._id == id) {
       return myBlog[i];
@@ -13,11 +12,10 @@ async function getBlog(id: string) {
   }
 }
 
-export const generateMetadata = async ({
-  params,
-}: Props): Promise<Metadata> => {
-  await params;
-  const _id = (await params)._id;
+export const generateMetadata = async (props: {
+  params: tParams;
+}): Promise<Metadata> => {
+  const { _id } = await props.params;
   const projectInfo = await getBlog(_id);
   if (projectInfo != undefined) {
     return {
@@ -36,25 +34,17 @@ export const generateMetadata = async ({
     title: 'Not Found',
   };
 };
-// eslint-disable-next-line
-export default async function Page({ params }: { params: { _id: string } }) {
-  let error;
+export default async function Page(props: { params: tParams }) {
+  const { _id } = await props.params;
 
-  const blogInfo = await getBlog(params!._id);
+  console.log(_id);
+  const blogInfo = await getBlog(_id);
   if (blogInfo == null) {
-    error = true;
-  }
-  if (error) {
-    console.log(error);
-    return (
-      <div className='pageContainer' id='errorPage'>
-        <h2 style={{ textAlign: 'center' }}>Page Does Not Exist</h2>
-      </div>
-    );
+    return <h2 style={{ textAlign: 'center' }}>Page Does Not Exist</h2>;
   }
   return (
-    <div id='blogPage' className='pageContainer'>
-      <BlogDetail blogInfo={blogInfo!} />
+    <div className='pageContainer'>
+      <BlogDetail blogInfo={blogInfo!}></BlogDetail>
     </div>
   );
 }
