@@ -10,7 +10,7 @@ export const Gallery = ({ gallery }: imageProps) => {
     width: '50%',
     display: 'inline-block',
   };
-  /* eslint no-unused-vars: 0 */
+  // eslint-disable-next-line
   let [index, setIndex] = useState<number>(0);
   return (
     <div>

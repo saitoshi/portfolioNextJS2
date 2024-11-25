@@ -37,7 +37,7 @@ export const generateMetadata = async ({
   };
 };
 
-export default async function Page({ params }: { params: { _id: string } }) {
+export default async function Page({ params }: { params: { _id: any } }) {
   let error;
   await params;
   const blogInfo = await getBlog(params!._id);
