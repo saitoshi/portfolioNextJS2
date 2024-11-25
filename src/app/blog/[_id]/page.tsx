@@ -1,7 +1,6 @@
-import './style.css';
-import type { Metadata } from 'next';
 import { myBlog } from '@/app/constants/blog';
 import { BlogDetail } from '@/app/components/BlogRelated/BlogDetail';
+import type { Metadata } from 'next';
 // eslint-disable-next-line
 type Props = {
   params: Promise<{ _id: string }>;
