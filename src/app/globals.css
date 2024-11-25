@@ -107,13 +107,32 @@ body b {
   display: flex;
   justify-content: center;
 }
-
+button {
+  background-color: rgba(69, 242, 255, 1);
+  color: #393f44;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  overflow: hidden;
+  font-weight: 700;
+}
 @media screen and (max-width: 650px) {
+  .mainHeader {
+    font-size: 24px;
+  }
+  .subHeader {
+    font-size: 18px;
+  }
   body p {
     font-size: 14px;
   }
   .readMore {
     font-size: 14px;
     margin-top: 25px;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 15px;
   }
 }

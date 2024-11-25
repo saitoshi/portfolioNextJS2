@@ -1,8 +1,8 @@
 import './style.css';
 import Link from 'next/link';
-import { pastWorks } from '@/app/constants/project';
+import { myBlog } from '@/app/constants/blog';
 
-export const ProjectTable = () => {
+export const BlogTable = () => {
   return (
     <div id='projectCollection' className='archiveTable'>
       <table className='tableBody'>
@@ -11,21 +11,21 @@ export const ProjectTable = () => {
             <th>Date</th>
             <th>Project</th>
             <th>Image</th>
-            <th>Built Using</th>
-            <th className='tableDescription'>Description</th>
+            <th>Category</th>
+            <th>Description</th>
             <th>Learn More</th>
           </tr>
         </thead>
         <tbody>
-          {pastWorks.map((work) => (
-            <tr key={work._id}>
-              <th>{work.date}</th>
-              <th className='tableTitle'>{work.title}</th>
+          {myBlog.map((blog) => (
+            <tr key={blog._id}>
+              <th>{blog.date}</th>
+              <th className='tableTitle'>{blog.title}</th>
               <th className='thumbnailCover'>
-                <img className='tableThumbnail' src={work.thumbnail}></img>
+                <img className='tableThumbnail' src={blog.thumbnail}></img>
               </th>
               <th>
-                {work.category.slice(0, 2).map((item) => {
+                {blog.category.slice(0, 2).map((item) => {
                   return (
                     <li className='tableCategories' key={item}>
                       {item}
@@ -33,7 +33,7 @@ export const ProjectTable = () => {
                   );
                 })}
               </th>
-              <th className='tableDescription'>{work.purpose}</th>
+              <th className='tableDescription'>{blog.description}</th>
               <th>
                 <Link
                   className='tableReadMore'
@@ -42,7 +42,7 @@ export const ProjectTable = () => {
                     textDecoration: 'none',
                     color: 'white',
                   }}
-                  href={`/projects/${work._id}`}>
+                  href={`/projects/${blog._id}`}>
                   &#x2192;
                 </Link>
               </th>

@@ -6,6 +6,9 @@ table {
   background-color: #393f44 !important;
 }
 
+.tableTitle {
+  font-size: 14px;
+}
 .tableDescription {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -49,6 +52,9 @@ table {
 }
 
 @media screen and (max-width: 650px) {
+  .tableTitle {
+    font-size: 12px;
+  }
   .archiveTable {
     font-size: 12px;
   }

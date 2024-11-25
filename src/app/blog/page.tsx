@@ -1,8 +1,8 @@
-import { ProjectTable } from '../components/MainTable/ProjectTable';
+import { BlogTable } from '../components/MainTable/BlogTable';
 import Link from 'next/link';
-export default function Projects() {
+export default function Blog() {
   return (
-    <div id='projectPage' className='pageContainer'>
+    <div id='blogPage' className='pageContainer'>
       <h2>
         <p>
           <Link
@@ -14,7 +14,7 @@ export default function Projects() {
         </p>
         <p className='mainHeader'>PAST PROJECTS</p>
       </h2>
-      <ProjectTable />
+      <BlogTable />
     </div>
   );
 }
