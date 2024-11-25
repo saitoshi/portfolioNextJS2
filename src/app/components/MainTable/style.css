@@ -64,4 +64,7 @@ table {
   .tableCategories {
     margin: 5px;
   }
+  .thumbnailCover img {
+    width: 40%;
+  }
 }
