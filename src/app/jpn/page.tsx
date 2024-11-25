@@ -4,7 +4,7 @@ import { ExperienceList } from '../components/TableList/ExperienceList';
 import { ProjectList } from '../components/ProjectList/ProjectList';
 import { IExperience, IProject, IBlog } from '../constants/type';
 import Link from 'next/link';
-import { pastExperience, pastExperienceJPN } from '../constants/experience';
+import { pastExperienceJPN } from '../constants/experience';
 import { BlogList } from '../components/TableList/BlogList';
 
 export default function JPN() {

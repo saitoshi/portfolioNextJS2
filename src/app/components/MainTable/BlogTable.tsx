@@ -42,7 +42,7 @@ export const BlogTable = () => {
                     textDecoration: 'none',
                     color: 'white',
                   }}
-                  href={`/projects/${blog._id}`}>
+                  href={`/blog/${blog._id}`}>
                   &#x2192;
                 </Link>
               </th>

@@ -64,7 +64,7 @@ export default function Home() {
         })}
       </div>
       <div className='readMoreContainer' style={{ textAlign: 'center' }}>
-        <Link id='projectReadMore' className='readMore' href={'/blogs'}>
+        <Link id='projectReadMore' className='readMore' href={'/blog'}>
           View Blog Archive
         </Link>
       </div>

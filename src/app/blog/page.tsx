@@ -12,7 +12,7 @@ export default function Blog() {
             &#x2190; HOME
           </Link>
         </p>
-        <p className='mainHeader'>PAST PROJECTS</p>
+        <p className='mainHeader'>BLOG ARCHIVE</p>
       </h2>
       <BlogTable />
     </div>

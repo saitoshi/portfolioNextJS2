@@ -1,6 +1,6 @@
 import './style.css';
 import { IBlog } from '@/app/constants/type';
-
+import Link from 'next/link';
 type blogInputs = {
   blog: IBlog;
 };
@@ -16,18 +16,23 @@ export const BlogList = ({ blog }: blogInputs) => {
         />
       </dt>
       <dd>
-        <h3 className='tableTitle'>{blog.title}</h3>
-        <p className='tableDesc'>
-          {blog.date} <br />
-          {blog.description}
-        </p>
-        {blog.category.map((cat) => {
-          return (
-            <li className='tableCategories' key={cat}>
-              {cat}
-            </li>
-          );
-        })}
+        <Link
+          className='tableReadMore'
+          style={{ textDecoration: 'none', color: 'white' }}
+          href={`/blog/${blog._id}`}>
+          <h3 className='tableTitle'>{blog.title}</h3>
+          <p className='tableDesc'>
+            {blog.date} <br />
+            {blog.description}
+          </p>
+          {blog.category.map((cat) => {
+            return (
+              <li className='tableCategories' key={cat}>
+                {cat}
+              </li>
+            );
+          })}
+        </Link>
       </dd>
     </div>
   );

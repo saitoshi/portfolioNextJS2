@@ -63,7 +63,7 @@ One of the goals for the Pub PS is to be “equally aligned” partners with our
 
 Now, I understand that not everyone may agree with these practices. Some may think I am undervaluing myself. However, at the end of the day we all have to practice when in Rome. Additionally, having these additional knowledge and skills may benefit me in the future.
 `,
-  thumbnail: '/image/blog/TaboolaPubPS2024.jpeg',
+  thumbnail: '/image/TaboolaPubPS2024.jpeg',
   category: ['work style', 'career'],
 };
 
@@ -74,7 +74,7 @@ export const workAdvice2024: IBlog = {
   date: 'August 13,2024',
   description:
     'After working in the professional world, what are advice I have based on my experience.',
-  thumbnail: '/image/blog/businessMan.png',
+  thumbnail: '/image/businessMan.png',
   markdownFile: `Recently, I was talking to my _kouhai_ (junior) about entering the professional world after graduation. We both agreed that this was a big **change**. However, what are the advices we have based on our own experiences. The following are advices I have for new employees based on my three year experience.
 
 ### Small Opportunities Are Still Opportunities
@@ -103,7 +103,7 @@ export const firstYearReflection: IBlog = {
   date: 'October 14,2024',
   description:
     'The various things I have learned after working at Taboola for one year.',
-  thumbnail: '/image/blog/businessOffice.avif',
+  thumbnail: '/image/businessOffice.avif',
   markdownFile: `Early last week, I celebrated my one year at Taboola or my first Taboolaversary. During this year, I have sharpened and discovered many things that will help with my career path. The following are some reflections from my first year. 
 ### Healthy Distance Relationships
 

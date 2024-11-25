@@ -34,8 +34,8 @@
   border-radius: 10px;
 }
 .blogImg {
-  aspect-ratio: 3 / 2;
-  width: 100%;
+  aspect-ratio: 16 / 9;
+  width: 80%;
   height: 100%;
 }
 @media screen and (max-width: 650px) {

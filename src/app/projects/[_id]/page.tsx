@@ -2,7 +2,7 @@ import { ProjectDetail } from '@/app/components/ProjectContents/ProjectDetail';
 import { pastWorks } from '@/app/constants/project';
 import type { Metadata } from 'next';
 
-async function getProject(id: any) {
+async function getProject(id: string) {
   console.log(id);
   for (let i = 0; i < pastWorks.length; i++) {
     if (pastWorks[i]._id == id) {
@@ -16,7 +16,7 @@ export const generateMetadata = async ({
   params: { _id: string };
 }): Promise<Metadata> => {
   await params;
-  let projectInfo = await getProject(params._id);
+  const projectInfo = await getProject(params._id);
   if (projectInfo != undefined) {
     return {
       title: projectInfo.title,
@@ -37,7 +37,7 @@ export const generateMetadata = async ({
 export default async function Page({ params }: { params: { _id: string } }) {
   let error;
 
-  let projectInfo = await getProject(params._id);
+  const projectInfo = await getProject(params._id);
   if (projectInfo == null) {
     error = true;
   }
