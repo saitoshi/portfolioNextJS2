@@ -1,9 +1,11 @@
 import './style.css';
-import React from 'react';
 import type { Metadata } from 'next';
 import { myBlog } from '@/app/constants/blog';
 import { BlogDetail } from '@/app/components/BlogRelated/BlogDetail';
 
+type Props = {
+  params: Promise<{ _id: string }>;
+};
 async function getBlog(id: string) {
   for (let i = 0; i < myBlog.length; i++) {
     if (myBlog[i]._id == id) {
@@ -37,9 +39,9 @@ export const generateMetadata = async ({
   };
 };
 // eslint-disable-next-line
-export default async function Page({ params }: { params: { _id: any } }) {
+export default async function Page({ params }: { params: { _id: string } }) {
   let error;
-  await params;
+
   const blogInfo = await getBlog(params!._id);
   if (blogInfo == null) {
     error = true;
