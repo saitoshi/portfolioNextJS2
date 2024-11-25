@@ -1,5 +1,7 @@
-import { BlogTable } from '../components/MainTable/BlogTable';
 import Link from 'next/link';
+import { myBlog } from '../constants/blog';
+import { BlogList } from '../components/TableList/BlogList';
+import { IBlog } from '../constants/type';
 export default function Blog() {
   return (
     <div id='blogPage' className='pageContainer'>
@@ -14,7 +16,9 @@ export default function Blog() {
         </p>
         <p className='mainHeader'>BLOG ARCHIVE</p>
       </h2>
-      <BlogTable />
+      {myBlog.map((blog: IBlog) => {
+        return <BlogList key={blog._id} blog={blog} />;
+      })}
     </div>
   );
 }

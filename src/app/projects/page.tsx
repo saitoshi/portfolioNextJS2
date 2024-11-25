@@ -1,5 +1,7 @@
-import { ProjectTable } from '../components/MainTable/ProjectTable';
 import Link from 'next/link';
+import { pastWorks } from '../constants/project';
+import { IProject } from '../constants/type';
+import { ProjectList } from '../components/ProjectList/ProjectList';
 export default function Projects() {
   return (
     <div id='projectPage' className='pageContainer'>
@@ -14,7 +16,9 @@ export default function Projects() {
         </p>
         <p className='mainHeader'>PAST PROJECTS</p>
       </h2>
-      <ProjectTable />
+      {pastWorks.map((project: IProject) => {
+        return <ProjectList key={project.id} project={project} />;
+      })}
     </div>
   );
 }

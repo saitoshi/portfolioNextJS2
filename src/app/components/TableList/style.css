@@ -11,6 +11,7 @@
   width: 20%;
   text-align: center;
   display: flex;
+  padding: 8px 0;
 }
 
 .listTable h3 {
@@ -44,8 +45,8 @@
 }
 .blogImg {
   aspect-ratio: 16 / 9;
-  width: 80%;
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
 @media screen and (max-width: 650px) {
   .listTable {
@@ -82,6 +83,6 @@
     margin: 10px 15px;
   }
   .blogImg {
-    width: 10%;
+    width: 40%;
   }
 }
