@@ -6,7 +6,7 @@ import { pastWorks } from '@/app/constants/project';
 export const ProjectTable = () => {
   return (
     <div id='projectCollection' className='archiveTable'>
-      <table>
+      <table className='tableBody'>
         <thead>
           <tr className='tableHead'>
             <th>Date</th>
@@ -14,11 +14,12 @@ export const ProjectTable = () => {
             <th>Image</th>
             <th>Built Using</th>
             <th className='tableDescription'>Description</th>
+            <th>Learn More</th>
           </tr>
         </thead>
         <tbody>
           {pastWorks.map((work) => (
-            <tr key={work._id} className='tableBody'>
+            <tr key={work._id}>
               <th>{work.date}</th>
               <th>{work.title}</th>
               <th className='thumbnailCover'>

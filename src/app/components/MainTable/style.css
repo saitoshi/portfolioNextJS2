@@ -1,14 +1,9 @@
-.archiveTable {
-  border: none;
-  display: flex;
+table {
   width: 100%;
-}
-tr {
-  border: white;
 }
 
 .tableBody {
-  border: 1px solid white;
+  background-color: #393f44 !important;
 }
 
 .tableDescription {
