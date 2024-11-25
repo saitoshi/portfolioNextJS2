@@ -14,7 +14,9 @@ body b {
 .pageContainer {
   padding: 40px 40px;
 }
-
+.sectionTitle {
+  margin: 25px 0;
+}
 .mainHeader {
   font-family: Zen Kaku Gothic New;
   margin: 0;
@@ -107,6 +109,9 @@ body b {
 }
 
 @media screen and (max-width: 650px) {
+  body p {
+    font-size: 14px;
+  }
   .readMore {
     font-size: 14px;
     margin-top: 25px;

@@ -1,9 +1,11 @@
 import { pastWorks } from './constants/project';
-import { ExperienceList } from './components/ExperienceList/ExperienceList';
+import { myBlog } from './constants/blog';
+import { ExperienceList } from './components/TableList/ExperienceList';
 import { ProjectList } from './components/ProjectList/ProjectList';
-import { IExperience, IProject } from './constants/type';
+import { IExperience, IProject, IBlog } from './constants/type';
 import Link from 'next/link';
 import { pastExperience } from './constants/experience';
+import { BlogList } from './components/TableList/BlogList';
 
 export default function Home() {
   return (
@@ -27,7 +29,7 @@ export default function Home() {
         </p>
       </div>
       <div id='experienceSection' className='pageSection'>
-        <h3>
+        <h3 className='sectionTitle'>
           RECENT <b>EXPERIENCES</b>
         </h3>
         {pastExperience.slice(0, 3).map((exp: IExperience) => {
@@ -40,7 +42,7 @@ export default function Home() {
         </Link>
       </div>
       <div id='projectSection' className='pageSection'>
-        <h3>
+        <h3 className='sectionTitle'>
           RECENT <b>PROJECTS</b>
         </h3>
         {pastWorks.slice(0, 3).map((project: IProject) => {
@@ -54,9 +56,12 @@ export default function Home() {
         </Link>
       </div>
       <div id='writingSection' className='pageSection'>
-        <h3>
+        <h3 className='sectionTitle'>
           RECENT <b>WRITINGS</b>
         </h3>
+        {myBlog.slice(0, 3).map((blog: IBlog) => {
+          return <BlogList key={blog._id} blog={blog} />;
+        })}
       </div>
     </div>
   );

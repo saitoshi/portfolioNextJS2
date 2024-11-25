@@ -33,31 +33,44 @@
   font-size: 12px;
   border-radius: 10px;
 }
+.blogImg {
+  aspect-ratio: 3 / 2;
+  width: 100%;
+  height: 100%;
+}
 @media screen and (max-width: 650px) {
+  .listTable {
+    display: block;
+  }
   .listTable dt {
     display: block;
     width: 100%;
+    padding: 4px 0;
   }
   .listTable dd {
     width: 100%;
-    padding: 8px 15px;
+    padding: 4px 8px;
     display: block;
+    margin: 0;
   }
 
   .tableYear {
-    font-size: 10px;
+    font-size: 14px;
+    margin: 0;
   }
   .tableTitle {
     font-size: 14px;
+    margin: 0;
   }
   .listTable {
     font-size: 12px;
   }
   .tableDesc {
+    margin: 10px 0;
     display: none;
   }
   .tableCategories {
     font-size: 10px;
-    margin: 2px 15px;
+    margin: 10px 15px;
   }
 }
