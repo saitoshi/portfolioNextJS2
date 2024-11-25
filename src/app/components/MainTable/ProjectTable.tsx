@@ -11,8 +11,8 @@ export const ProjectTable = () => {
             <th>Date</th>
             <th>Project</th>
             <th>Image</th>
-            <th>Built Using</th>
-            <th className='tableDescription'>Description</th>
+
+            <th>Description</th>
             <th>Learn More</th>
           </tr>
         </thead>
@@ -24,15 +24,7 @@ export const ProjectTable = () => {
               <th className='thumbnailCover'>
                 <img className='tableThumbnail' src={work.thumbnail}></img>
               </th>
-              <th>
-                {work.category.slice(0, 2).map((item) => {
-                  return (
-                    <li className='tableCategories' key={item}>
-                      {item}
-                    </li>
-                  );
-                })}
-              </th>
+
               <th className='tableDescription'>{work.purpose}</th>
               <th>
                 <Link
