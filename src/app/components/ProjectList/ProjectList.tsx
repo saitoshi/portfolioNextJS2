@@ -17,15 +17,19 @@ export const ProjectList = ({ project }: projectInputs) => {
         />
       </dt>
       <dd>
-        <h3 className='projectListTitle'>{project.title}</h3>
-        <p className='projectListDesc'>{project.purpose}</p>
-        {project.category.map((item) => {
-          return (
-            <li className='projectCategories' key={item}>
-              {item}
-            </li>
-          );
-        })}
+        <Link
+          style={{ textDecoration: 'none', color: 'white' }}
+          href={`/project/${project._id}}`}>
+          <h3 className='projectListTitle'>{project.title}</h3>
+          <p className='projectListDesc'>{project.purpose}</p>
+          {project.category.map((item) => {
+            return (
+              <li className='projectCategories' key={item}>
+                {item}
+              </li>
+            );
+          })}
+        </Link>
       </dd>
     </div>
   );

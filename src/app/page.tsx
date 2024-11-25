@@ -1,8 +1,10 @@
-import Image from 'next/image';
 import { pastWorks } from './constants/project';
+import { ExperienceList } from './components/ExperienceList/ExperienceList';
 import { ProjectList } from './components/ProjectList/ProjectList';
-import { IProject } from './constants/type';
+import { IExperience, IProject } from './constants/type';
 import Link from 'next/link';
+import { pastExperience } from './constants/experience';
+
 export default function Home() {
   return (
     <div id='homePage' className='pageContainer'>
@@ -28,6 +30,14 @@ export default function Home() {
         <h3>
           RECENT <b>EXPERIENCES</b>
         </h3>
+        {pastExperience.slice(0, 3).map((exp: IExperience) => {
+          return <ExperienceList key={exp.title} experience={exp} />;
+        })}
+      </div>
+      <div className='readMoreContainer' style={{ textAlign: 'center' }}>
+        <Link id='projectReadMore' className='readMore' href={'/resume'}>
+          View Resume
+        </Link>
       </div>
       <div id='projectSection' className='pageSection'>
         <h3>
@@ -38,7 +48,7 @@ export default function Home() {
         })}
       </div>
 
-      <div style={{ textAlign: 'center' }}>
+      <div className='readMoreContainer' style={{ textAlign: 'center' }}>
         <Link id='projectReadMore' className='readMore' href={'/projects'}>
           View Project Archive
         </Link>

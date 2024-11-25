@@ -32,7 +32,9 @@
   transition: 0.3s;
   font-weight: 700;
 }
-
+.navLinkLists:hover {
+  color: rgba(69, 242, 255, 1);
+}
 @media screen and (max-width: 700px) {
   #navMenu,
   .navLinkLists {

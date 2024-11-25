@@ -41,3 +41,11 @@ export interface IBlog {
   paragraphs?: string[];
   image?: string[];
 }
+
+export interface IExperience {
+  title: string;
+  period: string;
+  company: string;
+  description: string;
+  skills?: string[];
+}

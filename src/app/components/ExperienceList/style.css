@@ -1,0 +1,63 @@
+.listTable {
+  font-size: 16px;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.listTable dt {
+  font-weight: 700;
+  width: 20%;
+  text-align: center;
+  display: flex;
+}
+
+.listTable h3 {
+  font-size: 18px;
+}
+
+.listTable dd {
+  width: 80%;
+  padding: 8px 15px;
+}
+
+.tableCategories {
+  list-style: none;
+  display: inline-flex;
+  margin-right: 10px;
+  background-color: rgba(69, 242, 255, 1);
+  color: #333;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 650px) {
+  .listTable dt {
+    display: block;
+    width: 100%;
+  }
+  .listTable dd {
+    width: 100%;
+    padding: 8px 15px;
+    display: block;
+  }
+
+  .tableYear {
+    font-size: 10px;
+  }
+  .tableTitle {
+    font-size: 14px;
+  }
+  .listTable {
+    font-size: 12px;
+  }
+  .tableDesc {
+    display: none;
+  }
+  .tableCategories {
+    font-size: 10px;
+    margin: 2px 15px;
+  }
+}
