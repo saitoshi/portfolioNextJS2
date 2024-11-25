@@ -18,7 +18,7 @@ export const generateMetadata = async ({
   params: { _id: string };
 }): Promise<Metadata> => {
   await params;
-  let projectInfo = await getBlog(params!._id);
+  const projectInfo = await getBlog(params!._id);
   if (projectInfo != undefined) {
     return {
       title: projectInfo.title,
@@ -40,7 +40,7 @@ export const generateMetadata = async ({
 export default async function Page({ params }: { params: { _id: string } }) {
   let error;
   await params;
-  let blogInfo = await getBlog(params!._id);
+  const blogInfo = await getBlog(params!._id);
   if (blogInfo == null) {
     error = true;
   }

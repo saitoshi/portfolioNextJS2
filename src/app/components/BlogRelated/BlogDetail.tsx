@@ -2,7 +2,6 @@ import './style.css';
 import { IBlog } from '@/app/constants/type';
 import ReactMarkdown from 'react-markdown';
 import Link from 'next/link';
-import { Gallery } from '../Common/Gallery';
 export const BlogDetail = ({ blogInfo }: { blogInfo: IBlog }) => {
   return (
     <div id='blogDetail'>
