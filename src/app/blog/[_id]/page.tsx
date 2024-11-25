@@ -16,11 +16,10 @@ async function getBlog(id: string) {
 
 export const generateMetadata = async ({
   params,
-}: {
-  params: { _id: string };
-}): Promise<Metadata> => {
+}: Props): Promise<Metadata> => {
   await params;
-  const projectInfo = await getBlog(params!._id);
+  const _id = (await params)._id;
+  const projectInfo = await getBlog(_id);
   if (projectInfo != undefined) {
     return {
       title: projectInfo.title,
