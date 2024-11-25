@@ -36,7 +36,7 @@ export const generateMetadata = async ({
     title: 'Not Found',
   };
 };
-
+// eslint-disable-next-line
 export default async function Page({ params }: { params: { _id: any } }) {
   let error;
   await params;
