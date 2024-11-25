@@ -36,10 +36,18 @@ export const pastExperience: IExperience[] = [
 export const pastExperienceJPN: IExperience[] = [
   {
     title: 'ソリューションエンジニア',
-    period: '2023年10月',
+    period: '23年10月',
     company: 'タブーラ‧ジャパン株式会社',
     description:
       'タブーラで提供しているサービスを、クライアント向けのサイトに合わせて実装し、パフォーマンス改善などのABテストを担当しております。',
     skills: ['JavaScript', 'CSS', 'React', 'Node JS'],
+  },
+  {
+    title: 'IT エンジニア',
+    period: '22年3月-',
+    company: 'CloverTech',
+    description:
+      'クローバーテックでで提供しているサービスを、日本マーケット向けに調整などをしております。',
+    skills: ['JavaScript', 'Express JS', 'React', 'Node JS'],
   },
 ];

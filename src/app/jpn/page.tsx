@@ -29,14 +29,10 @@ export default function JPN() {
           return <ExperienceList key={exp.title} experience={exp} />;
         })}
       </div>
-      <div className='readMoreContainer' style={{ textAlign: 'center' }}>
-        <Link id='projectReadMore' className='readMore' href={'/resume'}>
-          View Resume
-        </Link>
-      </div>
+
       <div id='projectSection' className='pageSection'>
         <h3 className='sectionTitle'>
-          <b>プロジェクト</b>
+          <b>プロジェクト (英語)</b>
         </h3>
         {pastWorks.slice(0, 3).map((project: IProject) => {
           return <ProjectList key={project.id} project={project} />;
