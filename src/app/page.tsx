@@ -63,6 +63,11 @@ export default function Home() {
           return <BlogList key={blog._id} blog={blog} />;
         })}
       </div>
+      <div className='readMoreContainer' style={{ textAlign: 'center' }}>
+        <Link id='projectReadMore' className='readMore' href={'/blogs'}>
+          View Blog Archive
+        </Link>
+      </div>
     </div>
   );
 }
