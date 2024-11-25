@@ -21,10 +21,7 @@ export const BlogList = ({ blog }: blogInputs) => {
           style={{ textDecoration: 'none', color: 'white' }}
           href={`/blog/${blog._id}`}>
           <h3 className='tableTitle'>{blog.title}</h3>
-          <p className='tableDesc'>
-            {blog.date} <br />
-            {blog.description}
-          </p>
+          <p className='tableDesc'>{blog.description}</p>
           {blog.category.map((cat) => {
             return (
               <li className='tableCategories' key={cat}>
