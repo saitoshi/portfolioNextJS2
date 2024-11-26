@@ -5,7 +5,7 @@ export const NavBar = () => {
   const menuItems = [
     {
       menu: 'PROJECTS',
-      link: '/projects',
+      link: '/works',
     },
     {
       menu: 'BLOGS',

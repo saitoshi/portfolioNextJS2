@@ -19,7 +19,7 @@ export const ProjectList = ({ project }: projectInputs) => {
       <dd>
         <Link
           style={{ textDecoration: 'none', color: 'white' }}
-          href={`/projects/${project._id}`}>
+          href={`/works/${project._id}`}>
           <h3 className='projectListTitle'>{project.title}</h3>
           <p className='projectListDesc'>{project.purpose}</p>
           {project.category.map((item) => {
