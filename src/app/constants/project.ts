@@ -25,7 +25,7 @@ export const backstageToSpreadsheet: IProject = {
   _id: '660b5d47ff942396a1364765',
   title: 'Taboola API x Google Spreadsheet',
   date: 'Apr. 2024',
-  category: ['Google Scripts', 'Solution Engineer', 'Google Spreadsheets'],
+  category: ['Google Scripts', 'API', 'Google Spreadsheets'],
   image: ['/image/googleSpreadsheet.jpeg'],
   thumbnail: '/image/googleSpreadsheet.png',
   purpose:
@@ -51,7 +51,7 @@ export const taboolaIPFilter: IProject = {
   _id: '660b5d47ff942396a1364764',
   title: 'Taboola JPN - IP Filter',
   date: 'Apr. 2024',
-  category: ['JavaScript', 'Solution Engineer'],
+  category: ['JavaScript', 'API'],
   image: ['/image/midArticleSample.png'],
   thumbnail: '/image/midArticleSample.png',
   purpose:
@@ -78,7 +78,7 @@ export const cloverTechShopLive: IProject = {
   _id: '66061859b4c527abb8dbee42',
   title: 'CloverTech x ShopLive JPN API',
   date: 'Apr. 2024',
-  category: ['JavaScript', 'NodeJS', 'Google Big Query'],
+  category: ['TypeScript', 'NodeJS', 'Google Big Query', 'ExpressJS'],
   image: [
     '/image/frontproducts_shoplive.jpg',
     '/image/googleBigQuerySample.png',
@@ -107,7 +107,7 @@ export const midWidgetInsertion: IProject = {
   _id: '66061859b4c527abb8dbee41',
   title: 'Taboola JPN - Midarticle AD Insertion',
   date: 'Jan. 2024',
-  category: ['Solution Engineer', 'JavaScript'],
+  category: ['JavaScript'],
   image: ['/image/midArticleSample.png', '/image/midArticleAd1.jpg'],
   thumbnail: '/image/midArticleSample.png',
   purpose:
@@ -131,7 +131,7 @@ export const makaiMarineReport: IProject = {
   title: 'Makai Marine',
   _id: '66061859b4c527abb8dbee3f',
   date: 'Oct. 2023',
-  category: ['NextJS', 'MongoDB', 'Software Engineering'],
+  category: ['NextJS', 'MongoDB', 'JavaScript'],
   image: [
     '/image/makaiTop.png',
     '/image/makaiChatBot.png',
@@ -157,7 +157,7 @@ export const lvgScraper: IProject = {
   _id: '66061859b4c527abb8dbee3d',
   title: 'LVG Scrape',
   date: 'JUN. 2023',
-  category: ['Puppeeteer ', 'TypeScript React', 'NodeJS'],
+  category: ['Puppeeteer ', 'TypeScript', 'NodeJS', 'Docker'],
   image: ['/image/scraperImage.png'],
   thumbnail: '/image/scraperImage.png',
   purpose:
@@ -182,7 +182,7 @@ export const innovation0147: IProject = {
   _id: '66061859b4c527abb8dbee3b',
   title: '0147: Open Innovation',
   date: 'Jan 2023',
-  category: ['Software Engineering', 'NodeJS', 'MongoDB '],
+  category: ['TypeScript', 'React', 'NodeJS', 'MongoDB '],
   thumbnail:
     'https://github.com/saitoshi/images/blob/main/0147top.png?raw=true',
   image: [
@@ -220,7 +220,7 @@ export const doeReport: IProject = {
   _id: '66061859b4c527abb8dbee39',
   title: 'DOELT: Legislative Tracker',
   date: 'Nov 2022',
-  category: ['Software Engineering', 'JavaScript React', 'MeteorJS'],
+  category: ['JavaScript', 'React', 'MeteorJS'],
   thumbnail: 'https://hacc-cassiopeia.github.io/image/log-in.png',
   image: [
     'https://hacc-cassiopeia.github.io/image/home.png',
