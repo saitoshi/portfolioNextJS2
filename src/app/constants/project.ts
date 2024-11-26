@@ -3,7 +3,7 @@ import { IProject } from './type';
 export const primeFitnessNakano: IProject = {
   id: '9',
   _id: '660b5d47ff942396a1364766',
-  title: 'Prime Fitness Nakano',
+  title: 'Prime Fit Nakano',
   date: 'Nov. 2024',
   category: ['NextJS', 'TypeScript', 'MongoDB'],
   image: [
