@@ -1,5 +1,25 @@
 import { IProject } from './type';
 
+export const primeFitnessNakano: IProject = {
+  id: '9',
+  _id: '660b5d47ff942396a1364766',
+  title: 'Prime Fitness Nakano',
+  date: 'Nov. 2024',
+  category: ['NextJS', 'TypeScript', 'MongoDB'],
+  image: [
+    '/image/primeFitProject/landing.png',
+    '/image/primeFitProject/location.png',
+    '/image/primeFitProject/faq.png',
+  ],
+  thumbnail: '/image/primeFitProject/mainLogo.png',
+  purpose:
+    'A web application created for Nakano Prime Fitness to interact with their clients.',
+  requirements: [
+    'A dashboard feature that allows admin to make updates.',
+    'A feature to write and post blogs related to their services.',
+    'A login feature and only the admin can add users.',
+  ],
+};
 export const backstageToSpreadsheet: IProject = {
   id: '8',
   _id: '660b5d47ff942396a1364765',
@@ -229,4 +249,5 @@ export const pastWorks: IProject[] = [
   cloverTechShopLive,
   taboolaIPFilter,
   backstageToSpreadsheet,
+  primeFitnessNakano,
 ].reverse();
