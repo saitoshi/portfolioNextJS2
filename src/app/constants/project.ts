@@ -182,7 +182,7 @@ export const innovation0147: IProject = {
   _id: '66061859b4c527abb8dbee3b',
   title: '0147: Open Innovation',
   date: 'Jan 2023',
-  category: ['TypeScript', 'React', 'NodeJS', 'MongoDB '],
+  category: ['TypeScript', 'React', 'NodeJS', 'MongoDB', 'ExpressJS'],
   thumbnail:
     'https://github.com/saitoshi/images/blob/main/0147top.png?raw=true',
   image: [
