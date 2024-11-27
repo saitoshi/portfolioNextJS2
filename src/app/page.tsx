@@ -1,5 +1,7 @@
 import { pastWorks } from './constants/project';
 import { myBlog } from './constants/blog';
+import { CiLinkedin } from 'react-icons/ci';
+import { FaGithub } from 'react-icons/fa';
 import { ExperienceList } from './components/TableList/ExperienceList';
 import { ProjectList } from './components/ProjectList/ProjectList';
 import { IExperience, IProject, IBlog } from './constants/type';
@@ -14,7 +16,22 @@ export default function Home() {
         <h2>
           <p className='mainHeader'>Shin Saito</p>
           <p className='subHeader'>Web Engineer</p>
-          <div className='socialMediaLogo'></div>
+          <div className='socialMediaLogo'>
+            <Link
+              target='_blank'
+              rel='noopener noreferrer'
+              className='snsLink'
+              href={'https://www.linkedin.com/in/shin-saito/'}>
+              <CiLinkedin />
+            </Link>
+            <Link
+              target='_blank'
+              rel='noopener noreferrer'
+              className='snsLink'
+              href={'https://github.com/saitoshi'}>
+              <FaGithub />
+            </Link>
+          </div>
         </h2>
         <p>
           I am a developer interested in helping with others to make their idea

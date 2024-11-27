@@ -35,9 +35,11 @@ body b {
   text-align: center;
 }
 .socialMediaLogo {
-  margin: 0;
+  margin: 5px 5px 0 0;
   color: white;
   text-decoration: none;
+  text-align: left;
+  font-size: 20px;
 }
 .pageSection {
   margin: 10px 0;
