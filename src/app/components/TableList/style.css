@@ -34,6 +34,7 @@
   font-size: 12px;
   border-radius: 10px;
 }
+.expTableDesc,
 .tableDesc {
   overflow: hidden;
   text-overflow: ellipsis;

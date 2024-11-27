@@ -11,10 +11,10 @@ export const ExperienceList = ({ experience }: experienceInputs) => {
         <p className='tableYear'>{experience.period}</p>
       </dt>
       <dd>
-        <h3 className='tableTitle'>
+        <h3 className='expTableTitle'>
           {experience.title} | {experience.company}
         </h3>
-        <p className='tableDesc'>{experience.description}</p>
+        <p className='expTableDesc'>{experience.description}</p>
         {experience.skills?.map((skill) => {
           return (
             <li className='tableCategories' key={skill}>
