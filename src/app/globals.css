@@ -12,6 +12,7 @@ body b {
   font-weight: 700;
 }
 .pageContainer {
+  position: relative;
   padding: 40px 40px;
 }
 .sectionTitle {

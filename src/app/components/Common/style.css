@@ -1,0 +1,28 @@
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+.footerContainer {
+  padding: 35px 30px;
+  overflow: none;
+}
+.snsLink,
+.footerLink {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+.snsLink {
+  display: inline;
+  margin-left: 10px;
+}
+.snsLink:hover,
+.footerLink:hover {
+  color: rgba(69, 242, 255, 1);
+  font-weight: 800;
+}
