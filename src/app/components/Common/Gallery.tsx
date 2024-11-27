@@ -4,7 +4,7 @@ type imageProps = {
   gallery: string[];
   comment?: string[];
 };
-export const Gallery = ({ gallery }: imageProps) => {
+export const Gallery = ({ gallery, comment }: imageProps) => {
   const imageStyle: React.CSSProperties = {
     height: '75%',
     width: '50%',
@@ -15,9 +15,13 @@ export const Gallery = ({ gallery }: imageProps) => {
   return (
     <div>
       <img style={imageStyle} src={gallery[index]} />
-      <br />
 
-      <br />
+      {comment ? (
+        <p style={{ textAlign: 'center' }}>{comment[index]}</p>
+      ) : (
+        <></>
+      )}
+
       {gallery.length > 1 ? (
         <div style={{ display: 'inline-block' }}>
           <br />

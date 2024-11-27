@@ -117,6 +117,14 @@ button {
   overflow: hidden;
   font-weight: 700;
 }
+.tableTitle:hover,
+.tableDesc:hover,
+.projectListTitle:hover,
+.projectListDesc:hover,
+.listLink:hover {
+  color: rgba(69, 242, 255, 1);
+  font-weight: 700;
+}
 @media screen and (max-width: 650px) {
   .mainHeader {
     font-size: 24px;

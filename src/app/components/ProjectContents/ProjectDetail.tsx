@@ -30,7 +30,7 @@ export const ProjectDetail = ({ projectInfo }: { projectInfo: IProject }) => {
       ))}
       <br />
       <div style={{ textAlign: 'center' }}>
-        <Gallery gallery={projectInfo.image} />
+        <Gallery gallery={projectInfo.image} comment={projectInfo.comment} />
       </div>
     </div>
   );

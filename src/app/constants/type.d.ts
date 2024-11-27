@@ -27,6 +27,7 @@ export interface IProject {
   };
   jpnAvailable?: boolean;
   nextSteps?: string[];
+  comment?: string[];
 }
 
 export interface IBlog {

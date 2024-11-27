@@ -16,7 +16,7 @@ export const ProjectList = ({ project }: projectInputs) => {
           alt={'Thumbnail Image For '}
         />
       </dt>
-      <dd>
+      <dd className='listLink'>
         <Link
           style={{ textDecoration: 'none', color: 'white' }}
           href={`/works/${project._id}`}>
