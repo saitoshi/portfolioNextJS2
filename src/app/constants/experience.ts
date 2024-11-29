@@ -2,7 +2,7 @@ import { IExperience } from './type';
 export const pastExperience: IExperience[] = [
   {
     title: 'Solution Engineer',
-    period: 'Oct. 2024-PRESENT',
+    period: 'Oct. 2023-PRESENT',
     company: 'Taboola',
     description:
       'As a Solution Engineer I was responsible for implementing, managing, supporting, etc. Taboola products for new and existing clients.',
