@@ -1,0 +1,64 @@
+.sectionContainer {
+  margin: 15px 0;
+}
+
+.skillCategory {
+  list-style: none;
+  display: inline-flex;
+  margin: 10px 10px 10px 0;
+  background-color: rgba(69, 242, 255, 1);
+  color: #333;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 10px;
+}
+
+.jobTitle {
+  font-size: 16px;
+  margin-bottom: 0.5px;
+}
+
+.jobDesc {
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 0;
+}
+.jobYear {
+  margin: 0;
+  font-size: 14px;
+  padding-bottom: 0;
+}
+
+.sectionHeader {
+  color: #45f2ff;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin: 0;
+}
+@media screen and (max-width: 650px) {
+  .sectionHeader {
+    font-size: 16px;
+  }
+  .skillCategory {
+    font-size: 10px;
+  }
+  .jobWork,
+  .jobYear,
+  .jobDesc {
+    font-size: 12px;
+  }
+  .jobWork {
+    margin-top: 5px;
+  }
+  .jobTitle {
+    font-size: 14px;
+  }
+}

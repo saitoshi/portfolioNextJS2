@@ -12,8 +12,8 @@ export const NavBar = () => {
       link: '/blog',
     },
     {
-      menu: '日本語',
-      link: '/jpn',
+      menu: 'CV',
+      link: '/experience',
     },
   ];
   return (
