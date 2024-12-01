@@ -2,7 +2,6 @@
   list-style-type: none;
   margin: 0px 0 0 0;
   padding: 0 0px;
-  overflow: hidden;
   position: fixed;
   width: 100%;
   height: auto;
@@ -38,6 +37,6 @@
 @media screen and (max-width: 700px) {
   #navMenu,
   .navLinkLists {
-    font-size: 16px;
+    font-size: 14px;
   }
 }

@@ -1,6 +1,8 @@
 body {
   background-color: #323232 !important;
   color: white;
+  margin: 0;
+  padding: 0;
 }
 body p {
   text-align: left;

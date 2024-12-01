@@ -15,6 +15,10 @@ export const NavBar = () => {
       menu: 'CV',
       link: '/experience',
     },
+    {
+      menu: '日本語',
+      link: '/jpn',
+    },
   ];
   return (
     <div id='navMenu'>
