@@ -23,6 +23,9 @@ export const ProjectDetail = ({ projectInfo }: { projectInfo: IProject }) => {
         <p className='mainHeader'>{projectInfo.title}</p>
         <p className='subHeader'>{projectInfo.date}</p>
       </h2>
+      <div style={{ textAlign: 'center' }}>
+        <Gallery gallery={projectInfo.image} comment={projectInfo.comment} />
+      </div>
       <p>{projectInfo.purpose} </p>
       <h3>Language, Frameworks, and Tools Used</h3>
       <p>
@@ -35,10 +38,6 @@ export const ProjectDetail = ({ projectInfo }: { projectInfo: IProject }) => {
       {projectInfo.requirements.map((item) => (
         <li key={item}>{item}</li>
       ))}
-      <br />
-      <div style={{ textAlign: 'center' }}>
-        <Gallery gallery={projectInfo.image} comment={projectInfo.comment} />
-      </div>
     </div>
   );
 };
