@@ -247,7 +247,28 @@ export const doeReport: IProject = {
   },
 };
 
+export const radGrad: IProject = {
+  id: '10',
+  _id: '660b5d47ff942396a1364767',
+  title: 'RadGrad',
+  date: 'Aug. 2021',
+  category: ['TypeScript', 'React', 'MeteorJS'],
+  purpose:
+    'RadGrad is an application in which registered ICS students can use as a undergraduate career planner. For example, if a certain student is interested in cybersecurity, using RadGrad they are able to see the recommended courses and possible intern programs. Furthermore, RadGrad also has a point system in which as students advance through their studies they level up.',
+  image: [
+    '/image/RadGradHome.png',
+    '/image/RadGradTask2.gif',
+    '/image/RadGradTask3.gif',
+  ],
+  thumbnail: '/image/RadGradHome.png',
+  requirements: [
+    'One of the main goals was to migrate the existing JavaScript code to TypeScript',
+    'The system that provides the list of courses and internships that will help students achieve to be successful in the area of their interest.',
+    'Created components of areas that can be reused frequently.',
+  ],
+};
 export const pastWorks: IProject[] = [
+  radGrad,
   doeReport,
   innovation0147,
   lvgScraper,

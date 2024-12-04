@@ -21,10 +21,9 @@ export const Gallery = ({ gallery, comment }: imageProps) => {
       ) : (
         <></>
       )}
-
+      <br />
       {gallery.length > 1 ? (
         <div style={{ display: 'inline-block' }}>
-          <br />
           <button
             onClick={() => {
               index = index - 1;

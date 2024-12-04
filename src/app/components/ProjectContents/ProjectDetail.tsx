@@ -12,6 +12,13 @@ export const ProjectDetail = ({ projectInfo }: { projectInfo: IProject }) => {
             style={{ textDecoration: 'none' }}>
             &#x2190; HOME
           </Link>
+          &nbsp; / &nbsp;
+          <Link
+            href='/works'
+            className='subHeader'
+            style={{ textDecoration: 'none' }}>
+            PROJECTS
+          </Link>
         </p>
         <p className='mainHeader'>{projectInfo.title}</p>
         <p className='subHeader'>{projectInfo.date}</p>
