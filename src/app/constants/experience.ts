@@ -1,8 +1,16 @@
 import { IExperience } from './type';
 export const pastExperience: IExperience[] = [
   {
+    title: 'Software Developer',
+    period: 'Jan. 2025-PRESENT',
+    company: 'HCL Tech',
+    description:
+      'As a developer, I contribute to new and existing projects by doing the following actions - writing code, maintaining code, debugging, conducting tests, etc..',
+    skills: ['JavaScript', 'CSS', 'React', 'Node JS'],
+  },
+  {
     title: 'Solution Engineer',
-    period: 'Oct. 2023-PRESENT',
+    period: 'Oct. 2023-Dec.2024',
     company: 'Taboola',
     description:
       'As a Solution Engineer I was responsible for implementing, managing, supporting, etc. Taboola products for new and existing clients.',
@@ -34,6 +42,14 @@ export const pastExperience: IExperience[] = [
 ];
 
 export const pastExperienceJPN: IExperience[] = [
+  {
+    title: 'ソフトウェアデベロッパー',
+    period: '25年1月-現在',
+    company: 'HCLテクノロジーズ',
+    description:
+      'タブーラで提供しているサービスを、クライアント向けのサイトに合わせて実装し、パフォーマンス改善などのABテストを担当しております。',
+    skills: ['JavaScript', 'CSS', 'React', 'Node JS'],
+  },
   {
     title: 'ソリューションエンジニア',
     period: '23年10月',
