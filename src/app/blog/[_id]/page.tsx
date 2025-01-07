@@ -1,5 +1,5 @@
-import { BlogDetail } from '@/app/components/BlogRelated/BlogDetail';
-import { myBlog } from '@/app/constants/blog';
+import { BlogDetail } from '@/app/_components/BlogRelated/BlogDetail';
+import { myBlog } from '@/app/_constants/blog';
 import type { Metadata } from 'next';
 
 type tParams = Promise<{ _id: string }>;

@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import { myBlog } from '../constants/blog';
-import { BlogList } from '../components/TableList/BlogList';
-import { IBlog } from '../constants/type';
+import { myBlog } from '../_constants/blog';
+import { BlogList } from '../_components/TableList/BlogList';
+import { IBlog } from '../_constants/type';
 export default function Blog() {
   return (
     <div id='blogPage' className='pageContainer'>

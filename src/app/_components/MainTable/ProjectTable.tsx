@@ -1,6 +1,6 @@
 import './style.css';
 import Link from 'next/link';
-import { pastWorks } from '@/app/constants/project';
+import { pastWorks } from '@/app/_constants/project';
 
 export const ProjectTable = () => {
   return (

@@ -1,4 +1,4 @@
-import { IProject } from '@/app/constants/type';
+import { IProject } from '@/app/_constants/type';
 import './style.css';
 import Link from 'next/link';
 

@@ -1,4 +1,4 @@
-import { IProject } from '@/app/constants/type';
+import { IProject } from '@/app/_constants/type';
 import { Gallery } from '../Common/Gallery';
 import Link from 'next/link';
 export const ProjectDetail = ({ projectInfo }: { projectInfo: IProject }) => {

@@ -1,5 +1,5 @@
 import './style.css';
-import { IBlog } from '@/app/constants/type';
+import { IBlog } from '@/app/_constants/type';
 import Link from 'next/link';
 type blogInputs = {
   blog: IBlog;

@@ -1,6 +1,6 @@
 import './style.css';
 import Link from 'next/link';
-import { myBlog } from '@/app/constants/blog';
+import { myBlog } from '@/app/_constants/blog';
 
 export const BlogTable = () => {
   return (

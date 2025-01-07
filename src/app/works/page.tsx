@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import { pastWorks } from '../constants/project';
-import { IProject } from '../constants/type';
-import { ProjectList } from '../components/ProjectList/ProjectList';
+import { pastWorks } from '../_constants/project';
+import { IProject } from '../_constants/type';
+import { ProjectList } from '../_components/ProjectList/ProjectList';
 export default function Projects() {
   return (
     <div id='projectPage' className='pageContainer'>

@@ -1,5 +1,5 @@
 import './style.css';
-import { IExperience } from '@/app/constants/type';
+import { IExperience } from '@/app/_constants/type';
 
 type experienceInputs = {
   experience: IExperience;

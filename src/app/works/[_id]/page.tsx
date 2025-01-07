@@ -1,5 +1,5 @@
-import { ProjectDetail } from '@/app/components/ProjectContents/ProjectDetail';
-import { pastWorks } from '@/app/constants/project';
+import { ProjectDetail } from '@/app/_components/ProjectContents/ProjectDetail';
+import { pastWorks } from '@/app/_constants/project';
 import type { Metadata } from 'next';
 
 type tParams = Promise<{ _id: string }>;

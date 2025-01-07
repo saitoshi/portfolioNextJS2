@@ -1,11 +1,11 @@
-import { pastWorks } from '../constants/project';
-import { myBlog } from '../constants/blog';
-import { ExperienceList } from '../components/TableList/ExperienceList';
-import { ProjectList } from '../components/ProjectList/ProjectList';
-import { IExperience, IProject, IBlog } from '../constants/type';
+import { pastWorks } from '../_constants/project';
+import { myBlog } from '../_constants/blog';
+import { ExperienceList } from '../_components/TableList/ExperienceList';
+import { ProjectList } from '../_components/ProjectList/ProjectList';
+import { IExperience, IProject, IBlog } from '../_constants/type';
 import Link from 'next/link';
-import { pastExperienceJPN } from '../constants/experience';
-import { BlogList } from '../components/TableList/BlogList';
+import { pastExperienceJPN } from '../_constants/experience';
+import { BlogList } from '../_components/TableList/BlogList';
 
 export default function JPN() {
   return (

@@ -1,5 +1,5 @@
 import './style.css';
-import { IBlog } from '@/app/constants/type';
+import { IBlog } from '@/app/_constants/type';
 import ReactMarkdown from 'react-markdown';
 import Link from 'next/link';
 export const BlogDetail = ({ blogInfo }: { blogInfo: IBlog }) => {
