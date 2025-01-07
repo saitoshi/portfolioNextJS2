@@ -8,13 +8,13 @@ export const primeFitnessNakano: IProject = {
   category: ['NextJS', 'TypeScript', 'MongoDB'],
   image: [
     '/image/primeFitProject/landingPC.png',
-    '/image/primeFitProject/landing.png',
     '/image/primeFitProject/location.png',
     '/image/primeFitProject/faq.png',
+    '/image/primeFitProject/dashboard.png',
   ],
   thumbnail: '/image/primeFitProject/landingPC.png',
   purpose:
-    'A web application created for Nakano Prime Fitness to interact with their clients.',
+    'A web application created for Nakano Prime Fitness to interact with their clients. The web appliction is a simple CRUD application created with Next JS and TypeScript with a no-SQL data structure using MongoDB.',
   requirements: [
     'A dashboard feature that allows admin to make updates.',
     'A feature to write and post blogs related to their services.',
@@ -22,9 +22,9 @@ export const primeFitnessNakano: IProject = {
   ],
   comment: [
     'Screenshot of Landing Page (Desktop)',
-    'Screenshot of Landing Page (Mobile)',
     'Screenshot of Location Page',
     'Screenshot of FAQ Page',
+    'Screenshot of the Admin Dashboard',
   ],
 };
 export const backstageToSpreadsheet: IProject = {
