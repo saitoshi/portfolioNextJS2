@@ -15,7 +15,7 @@ export default function Home() {
       <div id='introSection'>
         <h2>
           <p className='mainHeader'>Shin Saito</p>
-          <p className='subHeader'>Web Engineer</p>
+          <p className='subHeader'>Software Engineer</p>
           <div className='socialMediaLogo'>
             <Link
               target='_blank'

@@ -6,7 +6,7 @@ export const pastExperience: IExperience[] = [
     company: 'HCL Tech',
     description:
       'As a developer, I contribute to new and existing projects by doing the following actions - writing code, maintaining code, debugging, conducting tests, etc..',
-    skills: ['JavaScript', 'CSS', 'React', 'Node JS'],
+    skills: ['TypeScript', 'AWS', 'IaC'],
   },
   {
     title: 'Solution Engineer',

@@ -50,3 +50,13 @@ export interface IExperience {
   description: string;
   skills?: string[];
 }
+
+export interface ICertification {
+  id: number;
+  title: string;
+  certifiedDate: string;
+  certifiedBody: string;
+  descrtiption?: string;
+  subjectArea: string[];
+  image?: string;
+}
