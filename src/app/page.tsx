@@ -54,10 +54,7 @@ export default function Home() {
         })}
       </div>
       <div className='readMoreContainer' style={{ textAlign: 'center' }}>
-        <Link
-          id='projectReadMore'
-          className='readMore'
-          href={'/image/2024SaitoCV.pdf'}>
+        <Link id='projectReadMore' className='readMore' href={'/resume'}>
           View Resume
         </Link>
       </div>
