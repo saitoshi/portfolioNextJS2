@@ -38,6 +38,15 @@ export const ProjectDetail = ({ projectInfo }: { projectInfo: IProject }) => {
       {projectInfo.requirements.map((item) => (
         <li key={item}>{item}</li>
       ))}
+      {projectInfo.tasks !== undefined ? <><h3>Tasks</h3>
+        <p>The following are the tasks I did for the project: 
+      
+        </p>
+      </> : <></>}
+      {projectInfo.tasks === undefined ? <></> : projectInfo.tasks.map((item) => {
+        return <li key={item}>{item}</li>
+      }) }
+  
     </div>
   );
 };

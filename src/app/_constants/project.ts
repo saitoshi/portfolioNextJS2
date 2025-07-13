@@ -1,5 +1,33 @@
 import { IProject } from './type';
 
+export const airlineChatBot: IProject = {
+  id: '11',
+  _id: '660b5d47ff942396a1364767',
+  title: 'Airline Chatbot',
+  date: 'May 2025 (ONGOING)',
+  category: ['TypeScript', 'AWS', 'Azure Open AI'],
+  image: ['/image/chatbotSample.png', '/image/chatBotLineSystemDesign.png'],
+  thumbnail: '/image/chatbotSample.png',
+  purpose:
+    'A chatbot integrated with Azure Open AI created for an airline company. The chatbot should act as a substitute for a customer service representative and answer majority of the questions provided by the customers.',
+  requirements: [
+    'The chatbot should use the WebSDK/BotSDK provided by the third-party provider selected by the client.',
+    'The chatbot frontend UI should match the previous service with minor modifications for improvement purposes',
+    'The chatbot backend should connect with all of the external APIs used by the client',
+    'The chatbot should be set up in AWS Cloud using the serverless structure and best practices that support high availability, scalability, and security.',
+    'The chatbot should use Azure Open AI as its Gen AI Model.',
+    'The chatbot should grab the user information from the localStorage and send it to the necessary Airline Management APIs.',
+    'Set up a LINE bot that connects to the backend of the chatbot, so customers can communicate from the LINE.',
+  ],
+  tasks: [
+    'For the following project, I acted as a technical project lead.',
+    'I developed the system desgin of the chatbot on how it should be set up in the cloud.',
+  ],
+  comment: [
+    'Sample Screenshot Of The Chatbot UI',
+    'The Sample System Design For LINE setup',
+  ],
+};
 export const primeFitnessNakano: IProject = {
   id: '9',
   _id: '660b5d47ff942396a1364766',
@@ -278,4 +306,5 @@ export const pastWorks: IProject[] = [
   taboolaIPFilter,
   backstageToSpreadsheet,
   primeFitnessNakano,
+  airlineChatBot,
 ].reverse();
