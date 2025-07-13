@@ -20,8 +20,9 @@ export const airlineChatBot: IProject = {
     'Set up a LINE bot that connects to the backend of the chatbot, so customers can communicate from the LINE.',
   ],
   tasks: [
-    'For the following project, I acted as a technical project lead.',
+    'For the following project, I acted as a technical project manager. As a result, I conducted technical task allocation and acted as the POC for the client.',
     'I developed the system desgin of the chatbot on how it should be set up in the cloud.',
+    'I conducted research on how to connect LINE chatroom with external services.',
   ],
   comment: [
     'Sample Screenshot Of The Chatbot UI',
