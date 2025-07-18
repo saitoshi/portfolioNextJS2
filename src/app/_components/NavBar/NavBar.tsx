@@ -8,10 +8,6 @@ export const NavBar = () => {
       link: '/works',
     },
     {
-      menu: 'BLOGS',
-      link: '/blog',
-    },
-    {
       menu: '日本語',
       link: '/jpn',
     },
