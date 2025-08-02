@@ -72,19 +72,7 @@ export default function Home() {
           View Project Archive
         </Link>
       </div>
-      <div id='writingSection' className='pageSection'>
-        <h3 className='sectionTitle'>
-          RECENT <b>WRITINGS</b>
-        </h3>
-        {myBlog.slice(0, 3).map((blog: IBlog) => {
-          return <BlogList key={blog._id} blog={blog} />;
-        })}
-      </div>
-      <div className='readMoreContainer' style={{ textAlign: 'center' }}>
-        <Link id='projectReadMore' className='readMore' href={'/blog'}>
-          View Blog Archive
-        </Link>
-      </div>
+    
     </div>
   );
 }

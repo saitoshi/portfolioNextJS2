@@ -7,10 +7,7 @@ export const NavBar = () => {
       menu: 'PROJECTS',
       link: '/works',
     },
-    {
-      menu: '日本語',
-      link: '/jpn',
-    },
+ 
   ];
   return (
     <div id='navMenu'>
