@@ -1,13 +1,11 @@
 import { pastWorks } from './_constants/project';
-import { myBlog } from './_constants/blog';
 import { CiLinkedin } from 'react-icons/ci';
 import { FaGithub } from 'react-icons/fa';
 import { ExperienceList } from './_components/TableList/ExperienceList';
 import { ProjectList } from './_components/ProjectList/ProjectList';
-import { IExperience, IProject, IBlog } from './_constants/type';
+import { IExperience, IProject } from './_constants/type';
 import Link from 'next/link';
 import { pastExperience } from './_constants/experience';
-import { BlogList } from './_components/TableList/BlogList';
 
 export default function Home() {
   return (
